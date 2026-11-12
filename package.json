@@ -1,0 +1,26 @@
+{
+  "name": "blockword",
+  "private": true,
+  "type": "module",
+  "description": "Blockword — a Bitcoin Wordle with co-op rooms, ecash stakes (Cashu) and optional Nostr identity.",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev:web": "npm run dev -w @blockword/web",
+    "dev:server": "npm run dev -w @blockword/server",
+    "build": "npm run build -w @blockword/web",
+    "start": "npm run start -w @blockword/server",
+    "typecheck": "tsc -p packages/shared && tsc -p apps/server && tsc -p apps/web",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.9.2",
+    "vitest": "^5.1.0"
+  }
+}

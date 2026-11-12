@@ -1,0 +1,20 @@
+{
+  "name": "@blockword/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@blockword/shared": "*",
+    "@cashu/cashu-ts": "^4.13.1",
+    "nostr-tools": "^2.25.2",
+    "tsx": "^4.23.0",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.18.1"
+  }
+}
